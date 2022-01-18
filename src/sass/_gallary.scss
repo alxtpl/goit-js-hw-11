@@ -55,16 +55,52 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding-top: 5%;
+    padding-top: 60px;
     padding-right: 30px;
-    border: 1px solid black;
+    // border: 1px solid black;
+    // display: grid;
+    // max-width: 1140px;
+    // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    // grid-auto-rows: 240px;
+    // grid-gap: 12px;
+    // justify-content: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    // padding-top: 55px;
 }
 
 .photo-card {
     // background-color: rgb(255, 134, 191);
-    display: flex;
-    width: 200px;
+    // display: flex;
+    // width: 200px;
+    font-size: 10px;
+    height: 250px;
+    position: relative;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
     img {
-        width: 190px;
+        // width: 190px;
+        &:hover {
+            transform: scale(1.03);
+        }
+        // height: 200;
+        width: 180px;
+        height: 150px;
+        object-fit: cover;
+        transition: transform var(--animation-duration) var(--timing-function);
+    }
+}
+
+.gallary-link {
+    color: black;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    &:hover {
+        cursor: zoom-in;
+    }
+    p {
+        padding-left: 10px;
     }
 }
