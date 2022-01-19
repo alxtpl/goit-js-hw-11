@@ -40,9 +40,9 @@ function onSubmit(e) {
 window.addEventListener('scroll', debounce(onScroll, 300));
 
 function onScroll() {
-    // console.log('window.scrollY ', window.scrollY);
-    // console.log('window.innerHeight', window.innerHeight);
-    // console.log('document.documentElement.scrollHeight', document.documentElement.scrollHeight);
+    console.log('window.scrollY ', window.scrollY);
+    console.log('window.innerHeight', window.innerHeight);
+    console.log('document.documentElement.scrollHeight', document.documentElement.scrollHeight);
     if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
         console.log('onScroll');
         // nextBtnNode.style.visibility = 'visible';
