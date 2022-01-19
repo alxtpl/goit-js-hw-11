@@ -104,3 +104,12 @@
         padding-left: 10px;
     }
 }
+
+.load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    visibility: hidden;
+    margin-bottom: 30px;
+}
